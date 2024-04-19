@@ -11,12 +11,7 @@ function Folder({ name, identifier, isEditOpen }) {
 
   const addFolderHandle = (data) => {
     console.log(data, "sdsjdyh");
-    //  {
-    //       "identifier": "one",
-    //       "type": "folder",
-    //       "name": "Folder1",
-    //       "hasChild": false
-    //     }
+
     setMainState((prev) => {
       return {
         ...prev,
@@ -69,7 +64,12 @@ function Folder({ name, identifier, isEditOpen }) {
               onChange={(e) => setAddedName(e.target.value)}
             />
             <SiTicktick
-              style={{ cursor: "pointer" }}
+              style={{
+                cursor: "pointer",
+                padding: "2px",
+                height: "1em",
+                width: "0.8em",
+              }}
               onClick={() => hanldleNameSave(identifier)}
             />
           </>
