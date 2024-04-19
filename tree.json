@@ -1,0 +1,10 @@
+{
+  "data": [
+    {
+      "key": "one",
+      "type": "folder",
+      "name": "folder",
+      "hasChild": false
+    }
+  ]
+}
