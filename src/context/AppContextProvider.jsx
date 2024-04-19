@@ -3,7 +3,7 @@ import data from "../../tree.json";
 import AppContext from "./AppContext";
 
 function AppContextProvider({ children }) {
-  const [mainState, setMainState] = useState(data.data || []);
+  const [mainState, setMainState] = useState(data || {});
   return (
     <AppContext.Provider value={{ mainState, setMainState }}>
       {children}

@@ -8,11 +8,11 @@ function Tree() {
   console.log(mainState, "dfsdfj");
   return (
     <div className="main-tree__container">
-      {mainState.map((item) => (
-        <div key={item.identifier} className="main-sub__conatiner">
-          <Folder {...item} />
-        </div>
-      ))}
+      <div className="main-sub__conatiner">
+        {mainState.data.map((item) => (
+          <Folder key={item.identifier} {...item} />
+        ))}
+      </div>
     </div>
   );
 }
