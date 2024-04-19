@@ -1,9 +1,9 @@
 {
   "data": [
     {
-      "key": "one",
+      "identifier": "one",
       "type": "folder",
-      "name": "folder",
+      "name": "Folder1",
       "hasChild": false
     }
   ]
